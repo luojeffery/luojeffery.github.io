@@ -1,0 +1,262 @@
+@font-face {
+    font-family: "big_noodle_titling";
+    src: url(fonts/big_noodle_titling.ttf);
+}
+
+@font-face {
+    font-family: "coolvetica_bold";
+    src: url(fonts/coolvetica\ compressed\ hv.otf);
+}
+
+html, body {
+    margin: 0; 
+    height: 100%; 
+    overflow: hidden;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+
+.home {
+    font-family: "big_noodle_titling";
+    color:white;
+}
+
+.main-links {
+    font-size: 60px;
+    line-height: 20px;
+    text-align: center;
+}
+
+.projects-imgs {
+    background: none;
+}
+
+#title {
+    font-size: 60px;
+    line-height: 20px;
+    text-align: left;
+    padding-left: 1%;
+  }
+
+#hook {
+    font-size: 200px;
+    line-height: 300px;
+    text-align: center;
+}
+
+#tagline {
+    font-size: 50px;    
+    text-align: center;
+    margin-top: 0;
+    position: relative;
+    bottom: 200px;
+}
+
+#pfp {
+    visibility: hidden;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+    position: relative;
+    bottom: 80px;
+    width:300px;
+    object-fit:cover;
+    border-radius:50%;
+  }
+
+#about-big {
+    visibility: hidden;
+    font-family: "big_noodle_titling";
+    color:white;
+    font-size: 100px;
+    position: relative;
+    bottom: 140px;
+    text-align: center;
+}
+
+#about-content {
+    visibility: hidden;
+    inline-size: 500px;
+    overflow-wrap: break-word;
+    font-family: "big_noodle_titling";
+    font-size: 40px;
+    color: white;
+    text-align: center;
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    
+    background-color: rgba(0,0,0,.5);
+
+    position: relative;
+    bottom: 200px;
+}
+
+#projects-big {
+    visibility: hidden;
+    display: block;
+    margin:0 auto;
+    font-family: "big_noodle_titling";
+    color:white;
+    font-size: 100px;
+    position: relative;
+    bottom: 1000px;
+    text-align: center;
+}
+#proj1 {grid-area: row1-pic;}
+#proj1-desc {grid-area: row1-desc;}
+
+#proj2 {grid-area: row2-pic}
+#proj2-desc {grid-area: row2-desc}
+
+#proj3 {grid-area: row3-pic}
+#proj3-desc {grid-area: row3-desc}
+
+#projects-grid {
+    visibility: hidden;
+    display: grid;
+    grid-template-areas:
+        "row1-pic row1-desc row1-desc row1-desc"
+        "row2-pic row2-desc row2-desc row2-desc"
+        "row3-pic row3-desc row3-desc row3-desc";
+    margin-left: 100px;
+    margin-right: 100px;
+    column-gap: 100px;
+    row-gap: 10px;
+    position: relative;
+    bottom: 1000px;
+    transform: scale(0.85);
+}
+
+.projects-text {
+    background-color: rgba(0, 0, 0, 0.5);
+    font-size: 40px;
+    font-family: "big_noodle_titling";
+    color: white;
+}
+
+#proj1 {
+    border-width: thin;
+    bottom: 1px; 
+    position: relative;
+    margin: auto;
+}
+
+#proj1-desc {
+    text-align: left;
+    position: relative;
+    margin: auto;
+}
+
+#proj2 {
+    border-width: thin;
+    bottom: 1px; 
+    position: relative;
+    margin: auto;
+}
+
+#proj2-desc {
+    text-align: left;
+    position: relative;
+    margin: auto;
+}
+
+#proj3 {
+    border-width: thin;
+    bottom: 1px; 
+    position: relative;
+    margin: auto;
+}
+
+#proj3-desc {
+    text-align: left;
+    position: relative;
+    margin: auto;
+}
+
+#contact-big {
+    visibility: hidden;
+    display: block;
+    margin:0 auto;
+    font-family: "big_noodle_titling";
+    color:white;
+    font-size: 100px;
+    position: relative;
+    bottom: 1900px;
+    text-align: center;
+}
+
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], textarea {
+    font-family: sans-serif;
+    color: black;
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */ 
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+  
+.form-label{
+    font-family: big_noodle_titling;
+    color: white;
+    font-size: 50px;
+}
+
+  /* Style the submit button with a specific background color etc */
+input[type=submit] {
+    font-family: big_noodle_titling;
+    font-size: 30px;
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+  
+  /* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+#thanks {
+    visibility: hidden;
+    font-family: "big_noodle_titling";
+    color: white;
+    text-align: center;
+    position: relative;
+    bottom: 1920px;
+}
+
+#contact-tag {
+    visibility: hidden;
+    font-family: "big_noodle_titling";
+    color: white;
+    text-align: center;
+
+    position: relative;
+    bottom: 1980px;
+}
+  /* Add a background color and some padding around the form */
+.container {
+    visibility: hidden;
+    border-radius: 5px;
+    padding: 20px;
+
+    position: relative;
+    bottom: 2020px;
+    margin-left: 400px;
+    margin-right: 400px;
+}

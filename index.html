@@ -1,11 +1,96 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <script src="https://cdn.jsdelivr.net/npm/p5@1.4.2/lib/p5.js"></script>
-    <script src="sketch.js"></script>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Personal Website</title>
+
+    <link rel="stylesheet" href="styles.css">
+
+    <script type="text/javascript" src="js/jquery-3.6.1.min.js"></script>
+    <script type="text/javascript" src="js/dat.gui.min.js"></script>
+    <script type="text/javascript" src="js/p5.min.js"></script>
+    <script type="text/javascript" src="js/gif.js"></script>
+    <script type="text/javascript" src="js/p5.dom.min.js"></script>
+
+    <script type="text/javascript">
+      $(document).ready(function() {
+          $("h1").css("display", "none");
+          $("h1").fadeIn(2500);
+      });
+    </script>
   </head>
+
   <body>
-    <main>
-    </main>
+
+    <h1 id="title" class="home">jeffery luo</h1>
+    <h1 id="hook" class="home">software and design</h1>
+    <h1 id="tagline" class="home">feel free to look around</h1>
+
+    <h1 id="about" class="home main-links">about</h1>
+    <h1 id="projects" class="home main-links">projects</h1>
+    <h1 id="contact" class="home main-links">contact</h1>
+
+    <img id="pfp" src="imgs/pfp.jpg">
+
+    <h1 id="about-big">about</h1>
+    <div id="about-content">Hi, I'm Jeffery Luo. I'm an aspiring software developer for emergent technology, researcher, choreographer, graphic designer, and J. Kenji López-Alt enjoyer. I am currently working on 
+      <a href="https://github.com/luojeffery">software for research</a> 
+      as well directing my dance team's next performance. You can check out my dance team's latest performance 
+       <a href="https://www.youtube.com/watch?v=2CLOsdkzR4E">here</a>. 
+       You can also see my art portfolio
+       <a href="https://drive.google.com/drive/folders/1c6LDl2isWjlfWIGjvMty8PmxLkqirzN9?usp=sharing">here</a>.
+    </div>
+    
+    <div id="projects-big">projects</div>
+    <div id="projects-grid">
+      <div id="proj1" class="projects-imgs">
+        <img id="shell" src="imgs/shell.png">
+      </div>
+      <div id="proj1-desc" class="projects-text">
+        I worked as a Content Engineering CyberDefence Intern at Shell plc in the summer of 2022, where I created a command line interface with PowerShell 7 and Python. The application interfaced with Azure Logic Apps and CrowdStrike to speed up digital forensic investigation during incident response by remotely installing <a href="https://docs.velociraptor.app/">triaging software</a> on internal devices.
+      </div>
+
+      <div id="proj2" class="projects-imgs">
+        <img id="lishore" src="imgs/lishore.png">
+      </div>
+      <div id="proj2-desc" class="projects-text">
+        I developed software for the reserachers onboard my university's School of Marine and Atmospheric Sciences' research vessel, the <a href="https://you.stonybrook.edu/somas/about/facilities/researchvessels/rv-seawolf/">SEAWOLF</a>, to record, parse, and display data from six different sensors onboard the ship simultaneously. I also created scripts for marine data processing for the Stony Brook University owned <a href="https://lishore.org/">lishore.org</a>.
+      </div>
+
+      <div id="proj3" class="projects-imgs">
+        <a href="https://www.youtube.com/watch?v=4uRsa_4I06g">
+          <img id="kbs" src="imgs/kbs.png">
+        </a>
+      </div>
+      <div id="proj3-desc" class="projects-text">
+        This was my team's TV debut-- this was a <a href="https://www.youtube.com/watch?v=4uRsa_4I06g">performance</a> I did on KBS Dance Team that aired on ESPN for a halftime show during a collegiate basketball game! 
+      </div>
+    </div>
+
+    <div id="contact-big">contact</div>
+    <h1 id="thanks">thank you so much! We'll be in touch soon.</h1>
+    <h1 id="contact-tag">shoot me an email!</h1>
+
+    <div class="container">
+        <label for="fname" class="form-label">First Name</label>
+        <input type="text" id="fname" name="firstname" placeholder="Your first name...">
+    
+        <label for="lname" class="form-label">Last Name</label>
+        <input type="text" id="lname" name="lastname" placeholder="Your last name...">
+    
+        <label for="email" class="form-label">Email</label>
+        <input type="text" id="email" name="email" placeholder="Your email...">
+    
+        <label for="subject" class="form-label">Subject</label>
+        <textarea id="subject" name="subject" placeholder="Let's connect..." style="height:200px"></textarea>
+    
+        <input id="submit" type="submit" value="Submit"></input>
+    </div>
+
+    <script type="text/javascript" src="js/sketch.js"></script>
+
   </body>
+
 </html>
+
